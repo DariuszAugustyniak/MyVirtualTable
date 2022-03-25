@@ -14,6 +14,6 @@ public class RollController {
 
     @GetMapping("/roll")
     public Roll roll(@RequestParam(value = "dice", defaultValue = "100") Integer dice) {
-        return new Roll(counter.incrementAndGet(),dice.intValue());
+        return new Roll(counter.incrementAndGet(), dice.intValue());
     }
 }
