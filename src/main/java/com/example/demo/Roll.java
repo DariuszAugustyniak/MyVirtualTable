@@ -32,4 +32,6 @@ public class Roll {
         Integer d100result =  rand.intValue();
         this.result = d100result.toString();
     }
+
+
 }
