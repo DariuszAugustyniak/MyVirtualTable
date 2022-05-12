@@ -24,6 +24,8 @@ public class DemoApplication {
             CardWH4e cardWH4e = new CardWH4e();
             cardWH4e.setGame_class("Rouge");
             cardWH4e.setName("Boblin");
+            cardWH4e.setRace("Goblin");
+            cardWH4e.setSkills("YES");
             cardHW4eMapper.insert(cardWH4e);
             System.out.println(this.cardHW4eMapper.findById(cardWH4e.getId()));
         };

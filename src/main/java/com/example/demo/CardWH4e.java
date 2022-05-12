@@ -6,6 +6,10 @@ public class CardWH4e {
 
     String game_class;
 
+    String race;
+
+    String skills;
+
     Long id;
 
 
@@ -35,9 +39,25 @@ public class CardWH4e {
         this.id = id;
     }
 
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
+    }
+
+    public String getSkills() {
+        return skills;
+    }
+
+    public void setSkills(String skills) {
+        this.skills = skills;
+    }
+
     @Override
     public String toString() {
-        return getId() + "," + getName() + "," + getGame_class();
+        return getId() + "," + getName() + "," + getGame_class()  + "," + getRace() + "," + getSkills();
     }
 
 

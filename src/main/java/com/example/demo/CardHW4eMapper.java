@@ -12,13 +12,13 @@ import java.util.List;
 public interface CardHW4eMapper {
 
 
-    @Insert("INSERT INTO CardHW4e (name, game_class) VALUES(#{name}, #{game_class})")
+    @Insert("INSERT INTO CardHW4e (name, game_class, race, skills) VALUES(#{name}, #{game_class}, #{race}, #{skills})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void insert(CardWH4e cardWH4e);
 
-    @Select("SELECT id, name, game_class FROM CardHW4e WHERE id = #{id}")
+    @Select("SELECT id, name, game_class, race, skills FROM CardHW4e WHERE id = #{id}")
     CardWH4e findById(long id);
 
-    @Select("SELECT id, name, game_class FROM CardHW4e")
+    @Select("SELECT id, name, game_class, race, skills FROM CardHW4e")
     List<CardWH4e> findAll();
 }
