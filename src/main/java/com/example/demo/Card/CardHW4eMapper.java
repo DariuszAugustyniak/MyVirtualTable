@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Card;
 
 
 import org.apache.ibatis.annotations.Insert;
@@ -12,7 +12,7 @@ import java.util.List;
 public interface CardHW4eMapper {
 
 
-    @Insert("INSERT INTO CardHW4e (name, game_class, race, skills) VALUES(#{name}, #{game_class}, #{race}, #{skills})")
+    @Insert("INSERT INTO CardHW4e (name, game_class, race, skills) VALUES(#{name}, #{gameClass}, #{race}, #{skills})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void insert(CardWH4e cardWH4e);
 

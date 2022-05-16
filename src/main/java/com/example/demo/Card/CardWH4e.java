@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.example.demo.Card;
 
 public class CardWH4e {
 
     String name;
 
-    String game_class;
+    String gameClass;
 
     String race;
 
@@ -18,8 +18,8 @@ public class CardWH4e {
     }
 
 
-    public String getGame_class() {
-        return game_class;
+    public String getGameClass() {
+        return gameClass;
     }
 
 
@@ -27,8 +27,8 @@ public class CardWH4e {
         this.name = name;
     }
 
-    public void setGame_class(String game_class) {
-        this.game_class = game_class;
+    public void setGameClass(String gameClass) {
+        this.gameClass = gameClass;
     }
 
     public Long getId() {
@@ -57,7 +57,7 @@ public class CardWH4e {
 
     @Override
     public String toString() {
-        return getId() + "," + getName() + "," + getGame_class()  + "," + getRace() + "," + getSkills();
+        return getId() + "," + getName() + "," + getGameClass()  + "," + getRace() + "," + getSkills();
     }
 
 
