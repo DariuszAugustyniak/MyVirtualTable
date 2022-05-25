@@ -8,8 +8,6 @@ public class CardWH4e {
 
     String race;
 
-    String skills;
-
     Long id;
 
 
@@ -47,17 +45,10 @@ public class CardWH4e {
         this.race = race;
     }
 
-    public String getSkills() {
-        return skills;
-    }
-
-    public void setSkills(String skills) {
-        this.skills = skills;
-    }
 
     @Override
     public String toString() {
-        return getId() + "," + getName() + "," + getGameClass()  + "," + getRace() + "," + getSkills();
+        return getId() + "," + getName() + "," + getGameClass() + "," + getRace();
     }
 
 
