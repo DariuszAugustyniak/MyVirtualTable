@@ -18,7 +18,7 @@ public class CardWH4eContoller {
 
     @GetMapping
     public List<CardWH4e> getAll() {
-          return cardHW4eMapper.findAll();
+        return cardHW4eMapper.findAll();
 
     }
 
@@ -29,6 +29,6 @@ public class CardWH4eContoller {
 
     @PostMapping
     public void addCard(@RequestBody CardWH4e cardWH4e) {
-         cardHW4eMapper.insert(cardWH4e);
+        cardHW4eMapper.insert(cardWH4e);
     }
 }

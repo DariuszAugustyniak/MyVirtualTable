@@ -1,5 +1,7 @@
 package com.example.demo.Card;
 
+import java.util.List;
+
 public class CardWH4e {
 
     String name;
@@ -9,6 +11,16 @@ public class CardWH4e {
     String race;
 
     Long id;
+
+    List<CardWH4eCharacteristic> characteristicNameMap;
+
+    public  List<CardWH4eCharacteristic> getCharacteristicNameMap() {
+        return characteristicNameMap;
+    }
+
+    public void setCharacteristicNameMap( List<CardWH4eCharacteristic> characteristicNameMap) {
+        this.characteristicNameMap = characteristicNameMap;
+    }
 
 
     public String getName() {
@@ -48,7 +60,7 @@ public class CardWH4e {
 
     @Override
     public String toString() {
-        return getId() + "," + getName() + "," + getGameClass() + "," + getRace();
+        return getId() + "," + getName() + "," + getGameClass() + "," + getRace() + "," + getCharacteristicNameMap();
     }
 
 

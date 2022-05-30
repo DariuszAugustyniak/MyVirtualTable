@@ -29,6 +29,7 @@ public class DemoApplication {
             cardWH4e.setRace("Goblin");
             cardHW4eMapper.insert(cardWH4e);
             System.out.println(this.cardHW4eMapper.findById(cardWH4e.getId()));
+            System.out.println(this.cardHW4eMapper.findBasicSkillsById(1));
             System.out.println(this.cardHW4eMapper.findFullCardById(1));
         };
     }
